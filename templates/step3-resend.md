@@ -1,9 +1,9 @@
 STEP 3: BUILD AND SEND THE EMAIL (Resend, with Gmail fallback)
 
-Only send if Step 2 found news that has not already been reported. (Step 1 finds already-reported news by searching Gmail with the connector: search the INBOX, not only Sent, for subject "WoW Forever update", because issues now arrive from updates@send.accotton.com via Resend. Use the Gmail connector only for that search and for the fallback below.)
+Only send if Step 2 found news that has not already been reported. (The repo is already cloned to /tmp/fu in Step 1a; skip 3a's clone if it exists. Use the Gmail connector only for the Step 1b search and for the fallback below.)
 
 3a. Get the assets and template:
-    git clone --depth 1 https://github.com/SolaceStudioDevs/forever-updates-assets /tmp/fu
+    [ -d /tmp/fu ] || git clone --depth 1 https://github.com/SolaceStudioDevs/forever-updates-assets /tmp/fu
     Read /tmp/fu/templates/newsletter-sample.html and /tmp/fu/README.md.
 
 3b. Write the HTML to /tmp/fu-out/email.html. Copy the structure, inline styles and colors of newsletter-sample.html exactly; only the content changes:
