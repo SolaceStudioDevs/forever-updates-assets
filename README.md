@@ -50,3 +50,6 @@ The Gmail connector strips web-linked images, so the newsletter attaches these s
 | `email/icon-druid.png` | ~2 KB | Growlz Alot |
 
 Class and game art © Blizzard Entertainment; used in a personal, non-commercial newsletter.
+
+## templates/
+`templates/newsletter-sample.html` – a complete sample issue (Oct 28, 2026 content) showing the newsletter layout: header image, date bar, "Biggest news", change cards with "How this affects you" callouts and class icons, dark footer with sources. All images are linked from this repo.
