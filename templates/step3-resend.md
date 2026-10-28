@@ -1,6 +1,6 @@
 STEP 3: BUILD AND SEND THE EMAIL (Resend, with Gmail fallback)
 
-Only send if Step 2 found news that has not already been reported. (Step 1 finds already-reported news by searching Gmail with the connector: search the INBOX, not only Sent, for subject "WoW Forever update", because issues now arrive from onboarding@resend.dev. Use the Gmail connector only for that search and for the fallback below.)
+Only send if Step 2 found news that has not already been reported. (Step 1 finds already-reported news by searching Gmail with the connector: search the INBOX, not only Sent, for subject "WoW Forever update", because issues now arrive from updates@send.accotton.com via Resend. Use the Gmail connector only for that search and for the fallback below.)
 
 3a. Get the assets and template:
     git clone --depth 1 https://github.com/SolaceStudioDevs/forever-updates-assets /tmp/fu

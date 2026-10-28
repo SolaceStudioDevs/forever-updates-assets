@@ -16,7 +16,7 @@ import urllib.error
 import urllib.request
 
 API_URL = "https://api.resend.com/emails"
-DEFAULT_FROM = "Forever Updates <onboarding@resend.dev>"
+DEFAULT_FROM = "Forever Updates <updates@send.accotton.com>"
 DEFAULT_TO = "thefeelofcotton383@gmail.com"
 
 
