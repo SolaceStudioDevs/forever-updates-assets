@@ -43,7 +43,7 @@ From Blizzard's official WoW: Forever press kit, resized for email.
 The Gmail connector strips web-linked images, so the newsletter attaches these small files instead.
 | File | Size | Use |
 |---|---|---|
-| `email/header-600.jpg` | ~10 KB | Header banner (600×200) |
+| `email/header-600.jpg` | ~13 KB | Header banner (600×200) |
 | `email/icon-shaman.png` | ~2 KB | Totes Alot |
 | `email/icon-warlock.png` | ~2 KB | Summons Alot |
 | `email/icon-druid.png` | ~2 KB | Growlz Alot |
