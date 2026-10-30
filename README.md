@@ -37,14 +37,14 @@ From Blizzard's official WoW: Forever press kit, resized for email.
 | `images/launch-sky-islands.jpg` | Floating islands, cinematic (wide) | Launch, servers, general/major news |
 
 ## header/
-"Class Changes – Daily Dispatch" banner from Claude Design: `header/header.png` (1200×400 original) and `header/header.jpg`.
+"World of Warcraft Forever" Horde banner: `header/header.png` (2000×666 original) and `header/header.jpg` (1200×400, used in emails).
 
 ## email/ – small copies sent as email attachments
 The Gmail connector strips web-linked images, so the newsletter attaches these small files instead.
 | File | Size | Use |
 |---|---|---|
-| `email/header-600.jpg` | ~13 KB | Header banner (600×200) |
-| `email/header-480.jpg` | ~9 KB | Smaller header banner (480×160) |
+| `email/header-600.jpg` | ~37 KB | Header banner (600×200) |
+| `email/header-480.jpg` | ~25 KB | Smaller header banner (480×160) |
 | `email/icon-shaman.png` | ~2 KB | Totes Alot |
 | `email/icon-warlock.png` | ~2 KB | Summons Alot |
 | `email/icon-druid.png` | ~2 KB | Growlz Alot |
