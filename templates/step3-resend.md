@@ -7,7 +7,7 @@ Only send if Step 2 found news that has not already been reported. (The repo is 
     Read /tmp/fu/templates/newsletter-sample.html and /tmp/fu/README.md.
 
 3b. Write the HTML to /tmp/fu-out/email.html. Copy the structure, inline styles and colors of newsletter-sample.html exactly; only the content changes:
-    - Header image row (https://raw.githubusercontent.com/SolaceStudioDevs/forever-updates-assets/main/header/header.jpg, width="600"), then the dark date bar with today's date and run label (e.g. "Morning edition" / "Evening edition").
+    - Header image row (https://raw.githubusercontent.com/SolaceStudioDevs/forever-updates-assets/main/header/banner-forever.jpg, width="600"), then the dark date bar with today's date and run label (e.g. "Morning edition" / "Evening edition").
     - "Biggest news" dark box: 1-3 sentences on the most important change.
     - One white card per topic: gold-bordered heading ("Class: short summary"), bullet list of changes written "old -> new" with the new value in bold, unconfirmed claims marked "Unconfirmed (guide claim):".
     - Each card ends with a "How this affects you" callout (light gold box) showing the class icon of the character it applies to, linked from https://raw.githubusercontent.com/SolaceStudioDevs/forever-updates-assets/main/icons/ :

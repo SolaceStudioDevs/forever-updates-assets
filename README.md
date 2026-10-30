@@ -37,7 +37,7 @@ From Blizzard's official WoW: Forever press kit, resized for email.
 | `images/launch-sky-islands.jpg` | Floating islands, cinematic (wide) | Launch, servers, general/major news |
 
 ## header/
-"World of Warcraft Forever" Horde banner: `header/header.png` (2000×666 original) and `header/header.jpg` (1200×400, used in emails).
+"World of Warcraft Forever" Horde banner: `header/header.png` (2000×666 original) and `header/banner-forever.jpg` (1200×400, used in emails). `header/header.jpg` is the same image under the old name; Gmail caches images by URL, so a new banner needs a new file name.
 
 ## email/ – small copies sent as email attachments
 The Gmail connector strips web-linked images, so the newsletter attaches these small files instead.
