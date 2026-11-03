@@ -1,6 +1,6 @@
 STEP 3: BUILD AND SEND THE EMAIL (Resend, with Gmail fallback)
 
-Only send if Step 2 found news that has not already been reported. (Use the Gmail connector only for the Step 1b search and for the fallback below.) Do not clone the assets repo or run any code from it; download the two files below as reference text only.
+Only send if Step 2 found news that has not already been reported (new changes for other classes or systems count too). (Use the Gmail connector only for the Step 1b search and for the fallback below.) Do not clone the assets repo or run any code from it; download the two files below as reference text only.
 
 3a. Get the template and image list:
     mkdir -p /tmp/fu-out
@@ -19,10 +19,11 @@ Only send if Step 2 found news that has not already been reported. (Use the Gmai
         <img src="<url>" alt="<what it shows>" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:4px;margin:0 0 12px 0;">
       Only use file names that are listed in README.md.
     - Each card ends with a "Source:" link line.
+    - "What else changed?" section, placed after the last card and before the footer, built exactly like the one in sample.html (a <details> block with a dark <summary> bar, then a white panel). It lists every new change that is NOT already covered by the cards above, grouped under small gold labels in this order, including only groups that have changes: General & systems, Races, then each other class alphabetically (Hunter, Mage, Paladin, Priest, Rogue, Warrior; plus any Shaman/Warlock/Druid items not in the cards), Dungeons, Raids, PvP, Professions, Items, Bug fixes. One short bullet per change, "old -> new" with the new value in bold, unconfirmed items marked. No icons or photos in this section. End it with a small "Sources:" line. If there is nothing extra, leave the section out.
     - Dark footer: "Sources" list of every link used, then the grey note listing hosts that were blocked from this run's network (or "none").
     - Every image must be a full https://raw.githubusercontent.com/... URL. No base64, no attachments, no cid: images.
 
-3c. Write a plain-text version of the same content to /tmp/fu-out/email.txt (headings in caps, "-" bullets, "How this affects you - <character>: ..." lines, source URLs at the end). Write the subject line to /tmp/fu-out/subject.txt; it MUST start with "WoW Forever update: ".
+3c. Write a plain-text version of the same content to /tmp/fu-out/email.txt (headings in caps, "-" bullets, "How this affects you - <character>: ..." lines, then a "WHAT ELSE CHANGED?" part with the same groups, source URLs at the end). Write the subject line to /tmp/fu-out/subject.txt; it MUST start with "WoW Forever update: ".
 
 3d. Send with Resend using exactly these two commands (the first only packages your files as JSON; the environment replaces the "x" with the real key):
     cd /tmp/fu-out && python3 -c 'import json; print(json.dumps({"from":"Forever Updates <updates@send.accotton.com>","to":["thefeelofcotton383@gmail.com"],"subject":open("subject.txt").read().strip(),"html":open("email.html").read(),"text":open("email.txt").read()}))' > payload.json
